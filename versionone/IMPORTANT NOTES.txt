@@ -1,0 +1,4 @@
+1)Currently it is onlyy displaying one requestper user,we  want them too be able to submi multiple ones,so change your detailView to .get()and display a list  of request for each user
+2)Currentluy for everyy user it takes  them directly to a form,dont do that,allow profile  first and  a button for a form
+3)send the notifs to thier  emmail about every update
+4)GIT AND GITHUB SETUP:-https://www.youtube.com/watch?v=J_Clau1bYco
