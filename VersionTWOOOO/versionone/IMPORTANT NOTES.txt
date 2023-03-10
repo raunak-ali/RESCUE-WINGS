@@ -1,0 +1,5 @@
+1)Currently it is onlyy displaying one request per user,we  want them too be able to submit multiple ones,so change your detailView to .get()and display a list  of request for each user
+2)Currentluy for every user it takes  them directly to a form,dont do that,allow profile  first and  a button for a form
+3)send the notifs to thier  emmail about every update
+5)We want our algorithmn to return a  list of request names and  a llist of correspondiing volunteers  ,so tha we can update thier values accordingly
+4)GIT AND GITHUB SETUP:-https://www.youtube.com/watch?v=J_Clau1bYco
