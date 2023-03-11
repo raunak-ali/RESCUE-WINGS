@@ -1,0 +1,7 @@
+<h3>YOUR REQUEST/APPLICATION</h3>
+{% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h3>THIS IS {{Profile.Name}}!</h3>
+        <h3>EMAIL {{Profile.Email}}!</h3>
+        <h3>Type {{Profile.Type_of_User}}!</h3>
+{% endif %}
