@@ -1,0 +1,20 @@
+1)Currently it is onlyy displaying one request per user,we  want them too be able to submit multiple ones,so change your detailView to .get()and display a list  of request for each user
+3)send the notifs to thier  email about every update
+4)GIT AND GITHUB SETUP:-https://www.youtube.com/watch?v=J_Clau1bYco
+5)IF NO OPPOSITE PERSON(VOLUNTTERR/REQUEST) IS THERE IT SHOULD NO BREAK
+6)Assign click karne pe form pe jaa rahha  hai,bc usmaihi you are doing the code too?NOO first we enter details and  then we assign
+################################THINGS TO FIX #################################
+1)EVENT UPDATES(Chairty evnts by users or by te =hhe organizations)BY timestamps
+2)TABULAR form  mai:-(HOME,REGISTRATION,LOGIN,PROFILE DETAILS) 
+3)DISPLAY ASSIGNED PARTNERS DOCUMENTS AND SUCH
+4)Requesting system:-So first when we find them a pair  and  alert goes saying a pair is found,
+in this case if either of  the parties says no,we put Pair_found=False and clear thier paired with section too,
+which mean even if the other hasent seen this notif,its profile  shall still update
+5)When we allow them to Search same protocol is followed,initially both parties have that value vfilled untl one party says otherwise
+6)ALERTS:-(SHOULD  BE SENT TO THIER  PHONE AND EMAIL TOO)
+    1)When we create a profile
+    2)We found you a PARTNER
+    3)Everytime a new event is organized
+    4)Everytime there is an update to Partner found and SUCH
+    5)Everytime a new request  is submited by them
+7)Make sure  for the unassigned people a  meassage isshown as "No match found rght noow,but u may search according to your prefrances,we will  update you shortly on the same"

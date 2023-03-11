@@ -1,0 +1,19 @@
+<h3>HOME</h3>
+{% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome {{ user.username }}!</h3>
+        <h2 class="my-4">MAKE A POST!</h2>
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+                {{Post_Form}}
+                <button class="btn btn-primary my-4" type="submit">Submit</button>
+          </form>
+        <a href="{% url 'logout' %}">Logout?</a>
+    </div>
+{% else %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome!</h3>
+        <a href="{% url 'register' %}">Signup</a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+{% endif %}

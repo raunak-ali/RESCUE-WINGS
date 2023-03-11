@@ -1,0 +1,31 @@
+<h3>YOUR REQUEST/APPLICATION</h3>
+{% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome {{user.username}}!</h3>
+        {% if P is None %}
+        <h3SUBMIT FORM BELOW:- </h3>
+            <a href="{% url 'home' %}">FORM</a>
+        {% else %}
+        <h3>HELLO {{P.Email}}!</h3>
+        <a href="{% url 'search' %}">Search</a>
+        <a href="{% url 'POSTMAKE' %}">MAKE A POST</a>
+        <a href="{% url 'Alert' %}">Check Your Alerts</a>
+        {% if P.Pair_Found  is True %}
+        <h3>Paired with {{P.Paired_with}}!</h3>
+        <a href="{% url 'Result' %}">Assign?</a>
+        {% else %}
+        <h3>Not Paired</h3>
+        <a href="{% url 'Result' %}">Assign?</a>
+        {% endif %}
+        {%endif%}
+        
+          
+        <a href="{% url 'logout' %}">Logout?</a>
+    </div>
+{% else %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome! HELLO</h3>
+        <a href="{% url 'register' %}">Signup</a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+{% endif %}

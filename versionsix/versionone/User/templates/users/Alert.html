@@ -1,0 +1,24 @@
+<h3>HOME</h3>
+{% if user.is_authenticated %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome {{ User.username }}!</h3>
+        <h2 class="my-4">HERE ARE YOUR DETAILS</h2>
+         <h3>YOUR NAME IS {{Profile.Name}}</h3>
+            <h3>YOUR TYPE  OF REQUEST WAS {{Profile.Type_of_User}}</h3>
+            <h3>YOU ARE  PAIRED WITH {{Profile.Paired_with}}</h3>
+            <h1>HERE ARE YOUR LATEST POSTS </h1>
+           {% for p in Posts%}
+           <h3>{{p.Title}}</h3>
+           <h3>{{p.Description}}</h3>
+           <h3>{{p.Tags}}</h3>
+           {% endfor %} 
+            
+        <a href="{% url 'logout' %}">Logout?</a>
+    </div>
+{% else %}
+    <div class="alert alert-success" role="alert">
+        <h3>Welcome!</h3>
+        <a href="{% url 'register' %}">Signup</a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+{% endif %}
